@@ -2,6 +2,8 @@ import { useState } from "react";
 import Header from "./components/header";
 import "./App.css";
 import toiture from "./assets/toiture.jpeg";
+import charpente from "./assets/charpente.jpeg";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -15,6 +17,23 @@ function App() {
           <li>Service reconnu et primé</li>
           <li>Intervention dans les meilleurs délais</li>
         </ul>
+      </div>
+      <div className="prestations">
+        <Card
+          image={charpente}
+          altText="prestation de charpente"
+          title="Charpente"
+        />
+        <Card
+          image={charpente}
+          altText="prestation de charpente"
+          title="Charpente"
+        />
+        <Card
+          image={charpente}
+          altText="prestation de charpente"
+          title="Charpente"
+        />
       </div>
     </>
   );

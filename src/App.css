@@ -5,9 +5,14 @@
   display: block;
 }
 
-highlighted {
+.container-hightlighted {
+  display: flex;
+}
+
+.highlighted {
   text-align: center;
-  margin-top: 20px;
+  background-color: rgb(255, 242, 219);
+  padding: 40px 0;
 }
 
 ul {
@@ -34,4 +39,12 @@ li {
 li:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.prestations {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
