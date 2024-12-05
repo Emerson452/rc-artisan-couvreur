@@ -1,18 +1,16 @@
 import Button from "../Button";
 import "./index.css";
+import logo from "../../assets/LogoCouleurNoText.png";
 
 function Header() {
   return (
     <header className="header">
-      <img></img>
+      <img src={logo} alt="Logo rc artisan couvreur" />
 
-      <nav>
-        <Button.Primary>Accueil</Button.Primary>
+      <nav role="navigation">
+        <Button.Secondary>Accueil</Button.Secondary>
         <Button.Secondary>Notre expertise</Button.Secondary>
-        <Button.Tertiary href="#contact">Contact et Devis</Button.Tertiary>
-        <a href="#contact" className="btn-primar  y">
-          Obtenez un devis
-        </a>
+        <Button.Primary href="#contact">Contact et Devis</Button.Primary>
       </nav>
     </header>
   );
