@@ -1,8 +1,9 @@
 #toiture {
   width: 100%;
   height: auto;
-  max-height: 1080px;
+  max-height: 800px;
   display: block;
+  clip-path: ellipse(95% 90% at 50% 0%);
 }
 
 .container-hightlighted {
