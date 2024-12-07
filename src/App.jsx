@@ -3,7 +3,14 @@ import Header from "./components/header";
 import "./App.css";
 import toiture from "./assets/toiture.jpeg";
 import charpente from "./assets/charpente.jpeg";
+
+import memo from "./assets/memo.svg";
+import tools from "./assets/tools.svg";
+import employees from "./assets/employees.svg";
+import worker from "./assets/worker.svg";
+
 import Card from "./components/Card";
+import Highlights from "./components/Highlights";
 
 function App() {
   return (
@@ -11,12 +18,26 @@ function App() {
       <Header></Header>
       <img id="toiture" src={toiture} alt="toiture" />
       <div className="highlighted">
-        <ul>
-          <li>Qualité et disponibilité</li>
-          <li>Devis gratuit et tarifs honnêtes</li>
-          <li>Service reconnu et primé</li>
-          <li>Intervention dans les meilleurs délais</li>
-        </ul>
+        <Highlights
+          icon={memo}
+          label="Devis gratuit et rapide"
+          alt="Devis gratuit"
+        />
+        <Highlights
+          icon={tools}
+          label="Matériaux et produits de qualité"
+          alt="Matériaux et produits de qualité"
+        />
+        <Highlights
+          icon={employees}
+          label="Équipe réactive et expérimentée"
+          alt="Équipe professionnelle"
+        />
+        <Highlights
+          icon={worker}
+          label="Intervention dans les meilleurs délais"
+          alt="Intervention dans les meilleurs délais"
+        />
       </div>
       <div className="prestations">
         <Card
