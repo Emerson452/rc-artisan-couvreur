@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Button";
-import logo from "../../assets/LogoCouleurNoText.svg";
+import logo from "../../assets/LogoBlanc.svg";
 import "./index.css";
 
 function Footer() {
@@ -9,10 +9,12 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-info">
           <img src={logo} alt="Logo rc artisan couvreur" />
-          <h2>Informations</h2>
-          <p>Adresse : 123 Rue des Toitures, Paris, France</p>
-          <p>Téléphone : 06 06 06 06 06</p>
-          <p>Email : contact@votreentreprise.com</p>
+          <h2>Parlons ensemble de votre prochain projet</h2>
+          <p>Téléphone : 07 61 66 79 05</p>
+          <p>
+            Adresse : 2 rue du Pré des Aulnes, 77340 Pontault-Combault, France
+          </p>
+          <p>Email : rc.couvreur77@gmail.com</p>
         </div>
 
         <div className="footer-form">

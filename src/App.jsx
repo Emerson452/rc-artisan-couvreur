@@ -95,20 +95,20 @@ function App() {
           <Step
             number="2"
             title="Devis"
-            text="Nous venons sur chantier afin de visualiser les travaux à réaliser."
+            text="Nous établissons un devis clair et détaillé pour vos travaux."
           />
           <Step
             number="3"
             title="Travaux"
-            text="Nous venons sur chantier afin de visualiser les travaux à réaliser."
+            text="Nous réalisons vos travaux avec professionnalisme et efficacité."
           />
           <Step
             number="4"
             title="Service après-vente"
-            text="Nous venons sur chantier afin de visualiser les travaux à réaliser."
+            text="Nous restons disponibles pour assurer votre satisfaction."
           />
           <div className="cta-container">
-            <Button.Tertiary label="06 06 06 06 06" />
+            <Button.Tertiary label="07 61 66 79 05" />
             <Button.Primary label="Devis" />
           </div>
         </div>
