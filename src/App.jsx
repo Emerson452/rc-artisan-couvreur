@@ -1,5 +1,3 @@
-import { useState } from "react";
-import Header from "./components/Header";
 import "./App.css";
 import toiture from "./assets/toiture.jpeg";
 import charpente from "./assets/charpente.jpeg";
@@ -9,10 +7,12 @@ import tools from "./assets/tools.svg";
 import employees from "./assets/employees.svg";
 import worker from "./assets/worker.svg";
 
+import Header from "./components/Header";
 import Button from "./components/Button";
 import Card from "./components/Card";
 import Highlights from "./components/Highlights";
 import Step from "./components/Step";
+import Footer from "./components/Footer";
 
 function App() {
   return (
