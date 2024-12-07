@@ -22,3 +22,24 @@
   justify-content: center;
   padding: 20px;
 }
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.steps-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  bottom: 0;
+  gap: 16px;
+}

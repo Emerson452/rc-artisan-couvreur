@@ -1,0 +1,24 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2fa3dd;
+  margin-bottom: 10px;
+}
+
+.step-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step-text {
+  font-size: 1rem;
+  color: #666;
+}

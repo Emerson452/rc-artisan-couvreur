@@ -9,8 +9,10 @@ import tools from "./assets/tools.svg";
 import employees from "./assets/employees.svg";
 import worker from "./assets/worker.svg";
 
+import Button from "./components/Button";
 import Card from "./components/Card";
 import Highlights from "./components/Highlights";
+import Step from "./components/Step";
 
 function App() {
   return (
@@ -82,6 +84,34 @@ function App() {
           altBackground="prestation de charpente"
           title="Charpente"
         />
+      </div>
+      <div className="steps-container">
+        <div className="steps-list">
+          <Step
+            number="1"
+            title="Visite du chantier"
+            text="Nous venons sur chantier afin de visualiser les travaux à réaliser."
+          />
+          <Step
+            number="2"
+            title="Devis"
+            text="Nous venons sur chantier afin de visualiser les travaux à réaliser."
+          />
+          <Step
+            number="3"
+            title="Travaux"
+            text="Nous venons sur chantier afin de visualiser les travaux à réaliser."
+          />
+          <Step
+            number="4"
+            title="Service après-vente"
+            text="Nous venons sur chantier afin de visualiser les travaux à réaliser."
+          />
+          <div className="cta-container">
+            <Button.Tertiary label="06 06 06 06 06" />
+            <Button.Primary label="Devis" />
+          </div>
+        </div>
       </div>
     </>
   );
