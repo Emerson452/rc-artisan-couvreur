@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "./components/header";
+import Header from "./components/Header";
 import "./App.css";
 import toiture from "./assets/toiture.jpeg";
 import charpente from "./assets/charpente.jpeg";
