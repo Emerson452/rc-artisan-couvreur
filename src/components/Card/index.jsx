@@ -1,11 +1,14 @@
 import React from "react";
 import "./index.css";
 
-function Card({ image, altText, title }) {
+function Card({ background, icon, altIcon, altBackground, title }) {
   return (
     <div className="card">
-      <img src={image} alt={altText} />
-      <div>
+      <div className="card-image">
+        <img src={background} alt={altBackground} />
+      </div>
+      <div className="card-content">
+        {icon && <img src={icon} alt={altIcon} />}
         <span>{title}</span>
       </div>
     </div>

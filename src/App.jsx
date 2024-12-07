@@ -39,20 +39,47 @@ function App() {
           alt="Intervention dans les meilleurs délais"
         />
       </div>
-      <div className="prestations">
+      <div className="expertise">
         <Card
-          image={charpente}
-          altText="prestation de charpente"
+          background={charpente}
+          altBackground="prestation de charpente"
+          title="CHARPENTE"
+        />
+        <Card
+          background={charpente}
+          altBackground="prestation de charpente"
+          title="COUVERTURE"
+        />
+        <Card
+          background={charpente}
+          altBackground="prestation de charpente"
+          title="DÉMOUSSAGE"
+        />
+        <Card
+          background={charpente}
+          altBackground="prestation de charpente"
+          title="ISOLATION"
+        />
+      </div>
+      <div className="expertise">
+        <Card
+          background={charpente}
+          altBackground="prestation de charpente"
+          title="ZINGUERIE"
+        />
+        <Card
+          background={charpente}
+          altBackground="prestation de charpente"
+          title="VELUX"
+        />
+        <Card
+          background={charpente}
+          altBackground="prestation de charpente"
           title="Charpente"
         />
         <Card
-          image={charpente}
-          altText="prestation de charpente"
-          title="Charpente"
-        />
-        <Card
-          image={charpente}
-          altText="prestation de charpente"
+          background={charpente}
+          altBackground="prestation de charpente"
           title="Charpente"
         />
       </div>
