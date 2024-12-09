@@ -3,11 +3,14 @@ footer {
   color: #ecf0f1;
   padding: 32px;
   padding-top: 64px;
+  box-sizing: border-box;
 }
 
 footer img {
   width: 250px;
   height: 250px;
+  max-width: 100%;
+  height: auto;
 }
 
 .footer-content {
@@ -23,16 +26,21 @@ footer img {
 .footer-info {
   flex: 1;
   min-width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.footer-form h2 {
+.footer-form h2,
+.footer-info h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .form-row {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .form-group {
@@ -70,8 +78,9 @@ footer img {
 }
 
 .footer-info p {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .footer-bottom {
@@ -79,6 +88,7 @@ footer img {
   border-top: 1px solid #34495e;
   padding-top: 10px;
   font-size: 0.8rem;
+  text-align: center;
 }
 
 .footer-bottom p {
@@ -94,5 +104,47 @@ footer img {
   .footer-form,
   .footer-info {
     min-width: 100%;
+    text-align: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-group {
+    flex: none;
+    width: 100%;
+  }
+
+  .footer-info p,
+  .footer-info h2 {
+    font-size: 1rem;
+  }
+
+  footer img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 16px;
+  }
+
+  .footer-info p,
+  .footer-form h2 {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 8px;
   }
 }
