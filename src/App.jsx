@@ -1,13 +1,13 @@
 import "./App.scss";
-import toiture from "./images/toiture.jpeg";
-import charpente from "./images/charpente.jpeg";
+import toiture from "./assets/images/toiture.jpeg";
+import charpente from "./assets/images/charpente.jpeg";
 
-import memo from "./icon/memo.svg";
-import tools from "./icon/tools.svg";
-import employees from "./icon/employees.svg";
-import worker from "./icon/worker.svg";
+import memo from "./assets/icon/memo.svg";
+import tools from "./assets/icon/tools.svg";
+import employees from "./assets/icon/employees.svg";
+import worker from "./assets/icon/worker.svg";
 
-import Header from "./components/Header";
+import Header from "./components/header";
 import Button from "./components/Button";
 import Card from "./components/Card";
 import Highlights from "./components/Highlights";
@@ -115,7 +115,7 @@ function App() {
         <iframe
           title="Google Map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.0247318584475!2d2.6245175767422384!3d48.80050660477797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60f7ca61845f3%3A0xde9cd06df725c8bb!2s2%20Rue%20du%20Pr%C3%A9%20des%20Aulnes%2C%2077340%20Pontault-Combault!5e0!3m2!1sen!2sfr!4v1733590488006!5m2!1sen!2sfr"
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
         ></iframe>
       </div>

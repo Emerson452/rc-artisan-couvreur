@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "../Button";
 import "./index.scss";
-import logo from "./logo/LogoCouleur.svg";
+import logo from "../../assets/logo/LogoCouleur.svg";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
