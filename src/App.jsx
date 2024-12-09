@@ -1,11 +1,11 @@
 import "./App.scss";
-import toiture from "./assets/images/toiture.jpeg";
-import charpente from "./assets/images/charpente.jpeg";
+import toiture from "./images/toiture.jpeg";
+import charpente from "./images/charpente.jpeg";
 
-import memo from "./assets/icon/memo.svg";
-import tools from "./assets/icon/tools.svg";
-import employees from "./assets/icon/employees.svg";
-import worker from "./assets/icon/worker.svg";
+import memo from "./icon/memo.svg";
+import tools from "./icon/tools.svg";
+import employees from "./icon/employees.svg";
+import worker from "./icon/worker.svg";
 
 import Header from "./components/Header";
 import Button from "./components/Button";
