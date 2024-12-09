@@ -62,8 +62,6 @@ function App() {
           altBackground="prestation de charpente"
           title="ISOLATION"
         />
-      </div>
-      <div className="expertise">
         <Card
           background={charpente}
           altBackground="prestation de charpente"
