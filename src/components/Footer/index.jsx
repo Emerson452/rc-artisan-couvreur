@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button";
-import logo from "../../assets/LogoBlanc.svg";
-import "./index.css";
+import logo from "../../assets/logo/LogoBlanc.svg";
+import "./index.scss";
 
 function Footer() {
   return (

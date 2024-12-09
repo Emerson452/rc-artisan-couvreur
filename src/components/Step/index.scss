@@ -1,0 +1,27 @@
+@use "../../variables.scss" as *;
+
+.step {
+  display: flex;
+  flex-direction: column;
+  padding: $padding-normal;
+  max-width: 300px;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $primary-color;
+  margin-bottom: $margin-small;
+}
+
+.step-title {
+  font-size: $font-size-large;
+  font-weight: bold;
+  color: $gray-color;
+  margin-bottom: $margin-small;
+}
+
+.step-text {
+  font-size: $font-size-normal;
+  color: #666;
+}

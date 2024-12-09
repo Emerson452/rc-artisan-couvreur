@@ -1,0 +1,143 @@
+@use "../../variables.scss" as *;
+
+footer {
+  background-color: $footer-color;
+  color: $light-color;
+  padding: $padding-xlarge;
+  box-sizing: border-box;
+}
+
+footer img {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: $gap-normal;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-form,
+.footer-info {
+  flex: 1;
+  min-width: 300px;
+  padding: $padding-normal;
+  box-sizing: border-box;
+}
+
+.form-row {
+  display: flex;
+  gap: $gap-normal;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $margin-normal;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: $padding-small;
+  border: $border-normal;
+  border-radius: $border-radius-normal;
+  font-size: $font-size-input;
+  font-family: $font-family-base;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.footer-info h2 {
+  font-size: $font-size-title;
+  margin-bottom: $margin-normal;
+}
+
+.footer-info p {
+  margin-bottom: $margin-normal;
+  font-size: $font-size-small;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  margin-top: $margin-normal;
+  border-top: 1px solid #34495e;
+  padding-top: $padding-small;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-form,
+  .footer-info {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .form-group {
+    flex: none;
+    width: 100%;
+  }
+
+  .footer-info p,
+  .footer-info h2 {
+    font-size: $font-size-normal;
+  }
+
+  footer img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 16px;
+  }
+
+  .footer-info p,
+  .footer-form h2 {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: $padding-small;
+  }
+}

@@ -1,37 +1,39 @@
+@use "../../variables.scss" as *;
+
 .button {
   display: inline-flex;
-  gap: 8px;
+  gap: $gap-small;
   padding: 0.8rem 1.5rem;
   align-items: center;
   border: none;
-  font-size: medium;
+  font-size: $font-size-normal;
 }
 
 .primary {
-  background-color: #2fa3dd;
-  color: white;
+  background-color: $primary-color;
+  color: $light-color;
 }
 
 .secondary {
   background-color: transparent;
-  color: black;
+  color: $dark-color;
   transition: color 0.3s ease;
 }
 
 .tertiary {
-  background-color: white;
+  background-color: $light-color;
   color: rgb(0, 0, 0);
   border: solid;
 }
 
 .primary:hover {
-  background-color: #0064bc;
+  background-color: $primary-color-hover;
 }
 
 .secondary:hover {
-  color: #024b8b;
+  color: $primary-color-hover;
 }
 
 .tertiary:hover {
-  background-color: #f0f0f0;
+  background-color: $gray-color-hover;
 }
