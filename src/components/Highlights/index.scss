@@ -1,3 +1,5 @@
+@use "../../variables.scss" as *;
+
 .highlight-item {
   display: flex;
   flex: 1 1 0;
@@ -5,7 +7,7 @@
   align-items: flex-start;
   text-align: center;
   padding: 0 10px;
-  border-right: 1px solid #ccc;
+  border-right: $border-normal;
   box-sizing: border-box;
 }
 
@@ -17,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: $gap-normal;
   width: 100%;
   max-width: 200px;
 }
@@ -28,9 +30,9 @@
 }
 
 .highlight-text {
-  font-size: 16px;
+  font-size: $font-size-normal;
   font-weight: bold;
-  color: #222222;
+  color: $gray-color;
   word-wrap: break-word;
   max-width: 100%;
   text-align: center;

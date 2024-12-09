@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import toiture from "./assets/toiture.jpeg";
 import charpente from "./assets/charpente.jpeg";
 

@@ -1,8 +1,9 @@
+@use "../../variables.scss" as *;
+
 footer {
-  background-color: #2c3e50;
-  color: #ecf0f1;
-  padding: 32px;
-  padding-top: 64px;
+  background-color: $footer-color;
+  color: $light-color;
+  padding: $padding-xlarge;
   box-sizing: border-box;
 }
 
@@ -17,7 +18,7 @@ footer img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: $gap-normal;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -26,20 +27,13 @@ footer img {
 .footer-info {
   flex: 1;
   min-width: 300px;
-  padding: 20px;
+  padding: $padding-normal;
   box-sizing: border-box;
-}
-
-.footer-form h2,
-.footer-info h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  text-align: center;
 }
 
 .form-row {
   display: flex;
-  gap: 16px;
+  gap: $gap-normal;
   flex-wrap: wrap;
 }
 
@@ -47,22 +41,20 @@ footer img {
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: $margin-normal;
 }
 
 .form-group label {
-  margin-bottom: 5px;
   font-weight: bold;
-  font-size: 0.9rem;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-  padding: 10px;
-  border: 1px solid #bdc3c7;
-  border-radius: 4px;
-  font-size: 1rem;
+  padding: $padding-small;
+  border: $border-normal;
+  border-radius: $border-radius-normal;
+  font-size: $font-size-input;
 }
 
 .form-group input:focus,
@@ -73,20 +65,20 @@ footer img {
 }
 
 .footer-info h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: $font-size-title;
+  margin-bottom: $margin-normal;
 }
 
 .footer-info p {
-  margin-bottom: 16px;
-  font-size: 0.9rem;
+  margin-bottom: $margin-normal;
+  font-size: $font-size-small;
   line-height: 1.5;
 }
 
 .footer-bottom {
-  margin-top: 20px;
+  margin-top: $margin-normal;
   border-top: 1px solid #34495e;
-  padding-top: 10px;
+  padding-top: $padding-small;
   font-size: 0.8rem;
   text-align: center;
 }
@@ -109,7 +101,7 @@ footer img {
 
   .form-row {
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
   }
 
   .form-group {
@@ -119,7 +111,7 @@ footer img {
 
   .footer-info p,
   .footer-info h2 {
-    font-size: 1rem;
+    font-size: $font-size-normal;
   }
 
   footer img {
@@ -145,6 +137,6 @@ footer img {
   .form-group input,
   .form-group select,
   .form-group textarea {
-    padding: 8px;
+    padding: $padding-small;
   }
 }

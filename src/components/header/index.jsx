@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "../Button";
-import "./index.css";
+import "./index.scss";
 import logo from "../../assets/LogoCouleurNoText.png";
 
 function Header() {
