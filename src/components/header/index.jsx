@@ -15,7 +15,13 @@ function Header() {
       <img src={logo} alt="Logo rc artisan couvreur" />
       <nav role="navigation" className={menuOpen ? "active" : ""}>
         <Button.Secondary>Accueil</Button.Secondary>
-        <Button.Secondary>Notre expertise</Button.Secondary>
+        <Button.Secondary
+          label="Notre expertise"
+          onClick={() => {
+            const expertiseSection = document.getElementById("expertise");
+            expertiseSection.scrollIntoView({ behavior: "smooth" });
+          }}
+        />
         <Button.Primary href="#contact">Contact et Devis</Button.Primary>
       </nav>
       <button className="hamburger" onClick={toggleMenu}>

@@ -41,7 +41,7 @@ function App() {
           alt="Intervention dans les meilleurs délais"
         />
       </div>
-      <div className="expertise">
+      <div id="expertise">
         <Card
           background={charpente}
           altBackground="prestation de charpente"
