@@ -2,7 +2,7 @@
 
 header {
   position: fixed;
-  width: 100%;
+  width: -webkit-fill-available;
   padding: 10px 0px;
   display: flex;
   justify-content: space-evenly;
@@ -25,6 +25,10 @@ header img {
 }
 
 @media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: $padding-small;
+  }
   nav {
     display: none;
     flex-direction: column;
