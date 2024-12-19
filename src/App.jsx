@@ -41,73 +41,75 @@ function App() {
           alt="Intervention dans les meilleurs délais"
         />
       </div>
-      <div id="expertise">
-        <Card
-          background={charpente}
-          altBackground="prestation de charpente"
-          title="CHARPENTE"
-        />
-        <Card
-          background={charpente}
-          altBackground="prestation de charpente"
-          title="COUVERTURE"
-        />
-        <Card
-          background={charpente}
-          altBackground="prestation de charpente"
-          title="DÉMOUSSAGE"
-        />
-        <Card
-          background={charpente}
-          altBackground="prestation de charpente"
-          title="ISOLATION"
-        />
-        <Card
-          background={charpente}
-          altBackground="prestation de charpente"
-          title="ZINGUERIE"
-        />
-        <Card
-          background={charpente}
-          altBackground="prestation de charpente"
-          title="VELUX"
-        />
-        <Card
-          background={charpente}
-          altBackground="prestation de charpente"
-          title="ÉTANCHÉITÉ"
-        />
-        <Card
-          background={charpente}
-          altBackground="prestation de charpente"
-          title="GOUTTIÈRE"
-        />
-      </div>
-      <div className="steps-container">
-        <div className="steps-list">
-          <Step
-            number="1"
-            title="Visite du chantier"
-            text="Nous venons sur chantier afin de visualiser les travaux à réaliser."
+      <div className="container-product">
+        <div id="expertise">
+          <Card
+            background={charpente}
+            altBackground="prestation de charpente"
+            title="CHARPENTE"
           />
-          <Step
-            number="2"
-            title="Devis"
-            text="Nous établissons un devis clair et détaillé pour vos travaux."
+          <Card
+            background={charpente}
+            altBackground="prestation de charpente"
+            title="COUVERTURE"
           />
-          <Step
-            number="3"
-            title="Travaux"
-            text="Nous réalisons vos travaux avec professionnalisme et efficacité."
+          <Card
+            background={charpente}
+            altBackground="prestation de charpente"
+            title="DÉMOUSSAGE"
           />
-          <Step
-            number="4"
-            title="Service après-vente"
-            text="Nous restons disponibles pour assurer votre satisfaction."
+          <Card
+            background={charpente}
+            altBackground="prestation de charpente"
+            title="ISOLATION"
           />
-          <div className="cta-container">
-            <Button.Tertiary label="07 61 66 79 05" />
-            <Button.Primary label="Devis" />
+          <Card
+            background={charpente}
+            altBackground="prestation de charpente"
+            title="ZINGUERIE"
+          />
+          <Card
+            background={charpente}
+            altBackground="prestation de charpente"
+            title="VELUX"
+          />
+          <Card
+            background={charpente}
+            altBackground="prestation de charpente"
+            title="ÉTANCHÉITÉ"
+          />
+          <Card
+            background={charpente}
+            altBackground="prestation de charpente"
+            title="GOUTTIÈRE"
+          />
+        </div>
+        <div className="steps-container">
+          <div className="steps-list">
+            <Step
+              number="1"
+              title="Visite du chantier"
+              text="Nous venons sur chantier afin de visualiser les travaux à réaliser."
+            />
+            <Step
+              number="2"
+              title="Devis"
+              text="Nous établissons un devis clair et détaillé pour vos travaux."
+            />
+            <Step
+              number="3"
+              title="Travaux"
+              text="Nous réalisons vos travaux avec professionnalisme et efficacité."
+            />
+            <Step
+              number="4"
+              title="Service après-vente"
+              text="Nous restons disponibles pour assurer votre satisfaction."
+            />
+            <div className="cta-container">
+              <Button.Tertiary label="07 61 66 79 05" />
+              <Button.Primary label="Devis" />
+            </div>
           </div>
         </div>
       </div>
