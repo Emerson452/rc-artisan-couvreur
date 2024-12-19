@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button";
 import logo from "../../assets/logo/LogoBlanc.svg";
 import "./index.scss";
 
 function Footer() {
+  const [contactValue, setContactValue] = useState("");
+  const [error, setError] = useState("");
+
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    setContactValue(value);
+    validateInput(value);
+  };
+
+  const validateInput = (value) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^[0-9]{10}$/;
+
+    if (emailRegex.test(value) || phoneRegex.test(value)) {
+      setError(""); // Valid input
+    } else {
+      setError("Veuillez entrer un email ou un numéro de téléphone valide.");
+    }
+  };
+
   return (
     <footer>
       <div className="footer-content">
@@ -42,53 +62,15 @@ function Footer() {
 
             <div className="form-group">
               <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Votre email"
-                required
-              />
-            </div>
-
-            <div className="form-group">
-              <input
                 type="text"
-                id="address"
-                name="address"
-                placeholder="Votre adresse"
+                id="contact"
+                name="contact"
+                placeholder="Votre email ou numéro de téléphone"
+                value={contactValue}
+                onChange={handleInputChange}
                 required
               />
-            </div>
-
-            <div className="form-row">
-              <div className="form-group">
-                <input
-                  type="text"
-                  id="city"
-                  name="city"
-                  placeholder="Votre ville"
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  id="zipcode"
-                  name="zipcode"
-                  placeholder="Votre code postal"
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="form-group">
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Votre numéro de téléphone"
-                required
-              />
+              {error && <p className="error-message">{error}</p>}
             </div>
 
             <div className="form-group">
