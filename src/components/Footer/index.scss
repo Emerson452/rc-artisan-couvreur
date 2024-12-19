@@ -18,8 +18,9 @@ footer img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: $gap-normal;
-  max-width: 1200px;
+  align-items: center;
+  gap: $gap-large;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -140,4 +141,14 @@ footer img {
   .form-group textarea {
     padding: $padding-small;
   }
+}
+
+.form-group select {
+  padding: $padding-small;
+  border: $border-normal;
+  border-radius: $border-radius-normal;
+  font-size: $font-size-input;
+  font-family: $font-family-base;
+  height: 100%px;
+  line-height: normal;
 }

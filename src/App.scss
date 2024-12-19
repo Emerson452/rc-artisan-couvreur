@@ -23,7 +23,6 @@
   gap: 15px;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -46,7 +45,9 @@
   flex-direction: column;
   min-width: 160px;
   bottom: 0;
-  gap: 16px;
+  gap: $gap-normal;
+  margin-top: auto;
+  padding: $padding-normal;
 }
 
 .map-container {
@@ -74,8 +75,18 @@
   .highlighted {
     flex-direction: column;
     gap: 32px;
+    margin: 10% auto;
   }
   #expertise {
     grid-template-columns: 1fr;
+    margin: $margin-normal;
+  }
+
+  .steps-container {
+    padding: 32px 0;
+  }
+
+  .cta-container {
+    padding-top: $padding-normal;
   }
 }
