@@ -152,3 +152,12 @@ footer img {
   height: 100%px;
   line-height: normal;
 }
+
+.form-group input {
+  padding: $padding-normal;
+  height: 12px;
+}
+
+.form-group select {
+  padding: 12px;
+}
