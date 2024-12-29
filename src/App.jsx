@@ -14,6 +14,11 @@ import Highlights from "./components/Highlights";
 import Step from "./components/Step";
 import Footer from "./components/Footer";
 
+const handleScrollToFooter = () => {
+  const footerForm = document.getElementById("footer-form");
+  footerForm.scrollIntoView({ behavior: "smooth" });
+};
+
 function App() {
   return (
     <>
@@ -107,8 +112,10 @@ function App() {
               text="Nous restons disponibles pour assurer votre satisfaction."
             />
             <div className="cta-container">
-              <Button.Tertiary label="07 61 66 79 05" />
-              <Button.Primary label="Devis" />
+              <a href="tel:0761667905">
+                <Button.Tertiary label="07 61 66 79 05" />
+              </a>
+              <Button.Primary label="Devis" onClick={handleScrollToFooter} />
             </div>
           </div>
         </div>
