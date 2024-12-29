@@ -24,7 +24,7 @@ footer img {
   margin: 0 auto;
 }
 
-.footer-form,
+#footer-form,
 .footer-info {
   flex: 1;
   min-width: 300px;
@@ -95,7 +95,7 @@ footer img {
     align-items: center;
   }
 
-  .footer-form,
+  #footer-form,
   .footer-info {
     min-width: 100%;
     text-align: center;
@@ -132,7 +132,7 @@ footer img {
   }
 
   .footer-info p,
-  .footer-form h2 {
+  #footer-form h2 {
     font-size: 0.9rem;
   }
 

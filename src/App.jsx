@@ -46,17 +46,17 @@ function App() {
           <Card
             background={charpente}
             altBackground="prestation de charpente"
-            title="CHARPENTE"
-          />
-          <Card
-            background={charpente}
-            altBackground="prestation de charpente"
             title="COUVERTURE"
           />
           <Card
             background={charpente}
             altBackground="prestation de charpente"
-            title="DÉMOUSSAGE"
+            title="ZINGUERIE"
+          />
+          <Card
+            background={charpente}
+            altBackground="prestation de charpente"
+            title="CHARPENTE"
           />
           <Card
             background={charpente}
@@ -66,7 +66,7 @@ function App() {
           <Card
             background={charpente}
             altBackground="prestation de charpente"
-            title="ZINGUERIE"
+            title="DÉMOUSSAGE"
           />
           <Card
             background={charpente}

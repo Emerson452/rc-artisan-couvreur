@@ -10,19 +10,42 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
+  const handleScrollToAccueil = () => {
+    const accueilSection = document.getElementById("toiture");
+    accueilSection.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleScrollToExpertise = () => {
+    const expertiseSection = document.getElementById("expertise");
+    if (expertiseSection) {
+      const offsetTop = expertiseSection.offsetTop;
+      const offset = 100;
+      window.scrollTo({
+        top: offsetTop - offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleScrollToFooter = () => {
+    const footerForm = document.getElementById("footer-form");
+    footerForm.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header>
       <img src={logo} alt="Logo rc artisan couvreur" />
       <nav role="navigation" className={menuOpen ? "active" : ""}>
-        <Button.Secondary>Accueil</Button.Secondary>
+        <Button.Secondary onClick={handleScrollToAccueil}>
+          Accueil
+        </Button.Secondary>
         <Button.Secondary
           label="Notre expertise"
-          onClick={() => {
-            const expertiseSection = document.getElementById("expertise");
-            expertiseSection.scrollIntoView({ behavior: "smooth" });
-          }}
+          onClick={handleScrollToExpertise}
         />
-        <Button.Primary href="#contact">Contact et Devis</Button.Primary>
+        <Button.Primary onClick={handleScrollToFooter}>
+          Contact et Devis
+        </Button.Primary>
       </nav>
       <button className="hamburger" onClick={toggleMenu}>
         ☰

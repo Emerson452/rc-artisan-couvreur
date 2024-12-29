@@ -18,7 +18,7 @@ function Footer() {
     const phoneRegex = /^[0-9]{10}$/;
 
     if (emailRegex.test(value) || phoneRegex.test(value)) {
-      setError(""); // Valid input
+      setError("");
     } else {
       setError("Veuillez entrer un email ou un numéro de téléphone valide.");
     }
@@ -37,7 +37,7 @@ function Footer() {
           <p>Email : rc.couvreur77@gmail.com</p>
         </div>
 
-        <div className="footer-form">
+        <div id="footer-form">
           <form>
             <div className="form-row">
               <div className="form-group">
