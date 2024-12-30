@@ -1,6 +1,13 @@
 import "./App.scss";
 import toiture from "./assets/images/toiture.jpeg";
-import charpente from "./assets/images/charpente.jpeg";
+import couverture from "./assets/images/couverture.jpg";
+import charpente from "./assets/images/charpente.jpg";
+import zinguerie from "./assets/images/zinguerie.jpg";
+import isolation from "./assets/images/isolation.jpg";
+import gouttière from "./assets/images/gouttière.jpg";
+import velux from "./assets/images/velux.jpg";
+import étanchéité from "./assets/images/étanchéité.jpg";
+import démoussage from "./assets/images/démoussage.jpg";
 
 import memo from "./assets/icon/memo.svg";
 import tools from "./assets/icon/tools.svg";
@@ -15,14 +22,54 @@ import Step from "./components/Step";
 import Footer from "./components/Footer";
 
 const cards = [
-  { background: charpente, title: "COUVERTURE" },
-  { background: charpente, title: "ZINGUERIE" },
-  { background: charpente, title: "CHARPENTE" },
-  { background: charpente, title: "ISOLATION" },
-  { background: charpente, title: "GOUTTIÈRE" },
-  { background: charpente, title: "VELUX" },
-  { background: charpente, title: "ÉTANCHÉITÉ" },
-  { background: charpente, title: "DÉMOUSSAGE" },
+  {
+    background: couverture,
+    title: "COUVERTURE",
+    description:
+      "Installation et entretien de toitures pour assurer une protection optimale contre les intempéries.",
+  },
+  {
+    background: zinguerie,
+    title: "ZINGUERIE",
+    description:
+      "Pose et réparation des éléments métalliques de toiture pour une parfaite étanchéité et durabilité.",
+  },
+  {
+    background: charpente,
+    title: "CHARPENTE",
+    description:
+      "Conception, installation et réparation des structures en bois pour un support robuste et durable.",
+  },
+  {
+    background: isolation,
+    title: "ISOLATION",
+    description:
+      "Amélioration de l'efficacité énergétique avec des matériaux isolants de haute qualité.",
+  },
+  {
+    background: gouttière,
+    title: "GOUTTIÈRE",
+    description:
+      "Installation et nettoyage des gouttières pour un drainage efficace des eaux pluviales.",
+  },
+  {
+    background: velux,
+    title: "VELUX",
+    description:
+      "Pose de fenêtres de toit pour apporter lumière naturelle et ventilation à votre intérieur.",
+  },
+  {
+    background: étanchéité,
+    title: "ÉTANCHÉITÉ",
+    description:
+      "Traitements spécifiques pour prévenir les infiltrations et protéger votre toiture.",
+  },
+  {
+    background: démoussage,
+    title: "DÉMOUSSAGE",
+    description:
+      "Nettoyage de la toiture pour éliminer mousses, lichens et saletés, prolongeant ainsi sa durée de vie.",
+  },
 ];
 
 const handleScrollToFooter = () => {
@@ -34,7 +81,12 @@ function App() {
   return (
     <>
       <Header></Header>
-      <img id="toiture" src={toiture} alt="toiture" />
+      <div className="toiture-container">
+        <img id="toiture" src={toiture} alt="toiture" />
+        <div className="toiture-overlay">
+          <h1>RC-ARTISAN-COUVREUR</h1>
+        </div>
+      </div>
       <div className="highlighted">
         <Highlights
           icon={memo}
@@ -65,6 +117,7 @@ function App() {
               background={card.background}
               altBackground="prestation de charpente"
               title={card.title}
+              description={card.description}
             />
           ))}
         </div>
