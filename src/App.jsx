@@ -14,6 +14,17 @@ import Highlights from "./components/Highlights";
 import Step from "./components/Step";
 import Footer from "./components/Footer";
 
+const cards = [
+  { background: charpente, title: "COUVERTURE" },
+  { background: charpente, title: "ZINGUERIE" },
+  { background: charpente, title: "CHARPENTE" },
+  { background: charpente, title: "ISOLATION" },
+  { background: charpente, title: "DÉMOUSSAGE" },
+  { background: charpente, title: "VELUX" },
+  { background: charpente, title: "ÉTANCHÉITÉ" },
+  { background: charpente, title: "GOUTTIÈRE" },
+];
+
 const handleScrollToFooter = () => {
   const footerForm = document.getElementById("footer-form");
   footerForm.scrollIntoView({ behavior: "smooth" });
@@ -48,46 +59,14 @@ function App() {
       </div>
       <div className="container-product">
         <div id="expertise">
-          <Card
-            background={charpente}
-            altBackground="prestation de charpente"
-            title="COUVERTURE"
-          />
-          <Card
-            background={charpente}
-            altBackground="prestation de charpente"
-            title="ZINGUERIE"
-          />
-          <Card
-            background={charpente}
-            altBackground="prestation de charpente"
-            title="CHARPENTE"
-          />
-          <Card
-            background={charpente}
-            altBackground="prestation de charpente"
-            title="ISOLATION"
-          />
-          <Card
-            background={charpente}
-            altBackground="prestation de charpente"
-            title="DÉMOUSSAGE"
-          />
-          <Card
-            background={charpente}
-            altBackground="prestation de charpente"
-            title="VELUX"
-          />
-          <Card
-            background={charpente}
-            altBackground="prestation de charpente"
-            title="ÉTANCHÉITÉ"
-          />
-          <Card
-            background={charpente}
-            altBackground="prestation de charpente"
-            title="GOUTTIÈRE"
-          />
+          {cards.map((card, index) => (
+            <Card
+              key={index}
+              background={card.background}
+              altBackground="prestation de charpente"
+              title={card.title}
+            />
+          ))}
         </div>
         <div className="steps-container">
           <div className="steps-list">
