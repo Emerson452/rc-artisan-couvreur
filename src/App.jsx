@@ -1,6 +1,13 @@
 import "./App.scss";
 import toiture from "./assets/images/toiture.jpeg";
-import charpente from "./assets/images/charpente.jpeg";
+import couverture from "./assets/images/couverture.jpg";
+import charpente from "./assets/images/charpente.jpg";
+import zinguerie from "./assets/images/zinguerie.jpg";
+import isolation from "./assets/images/isolation.jpg";
+import gouttière from "./assets/images/gouttière.jpg";
+import velux from "./assets/images/velux.jpg";
+import étanchéité from "./assets/images/étanchéité.jpg";
+import démoussage from "./assets/images/démoussage.jpg";
 
 import memo from "./assets/icon/memo.svg";
 import tools from "./assets/icon/tools.svg";
@@ -16,13 +23,13 @@ import Footer from "./components/Footer";
 
 const cards = [
   {
-    background: charpente,
+    background: couverture,
     title: "COUVERTURE",
     description:
       "Installation et entretien de toitures pour assurer une protection optimale contre les intempéries.",
   },
   {
-    background: charpente,
+    background: zinguerie,
     title: "ZINGUERIE",
     description:
       "Pose et réparation des éléments métalliques de toiture pour une parfaite étanchéité et durabilité.",
@@ -34,31 +41,31 @@ const cards = [
       "Conception, installation et réparation des structures en bois pour un support robuste et durable.",
   },
   {
-    background: charpente,
+    background: isolation,
     title: "ISOLATION",
     description:
       "Amélioration de l'efficacité énergétique avec des matériaux isolants de haute qualité.",
   },
   {
-    background: charpente,
+    background: gouttière,
     title: "GOUTTIÈRE",
     description:
       "Installation et nettoyage des gouttières pour un drainage efficace des eaux pluviales.",
   },
   {
-    background: charpente,
+    background: velux,
     title: "VELUX",
     description:
       "Pose de fenêtres de toit pour apporter lumière naturelle et ventilation à votre intérieur.",
   },
   {
-    background: charpente,
+    background: étanchéité,
     title: "ÉTANCHÉITÉ",
     description:
       "Traitements spécifiques pour prévenir les infiltrations et protéger votre toiture.",
   },
   {
-    background: charpente,
+    background: démoussage,
     title: "DÉMOUSSAGE",
     description:
       "Nettoyage de la toiture pour éliminer mousses, lichens et saletés, prolongeant ainsi sa durée de vie.",

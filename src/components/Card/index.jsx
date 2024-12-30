@@ -10,7 +10,10 @@ function Card({ background, altBackground, title, description }) {
       </div>
       <div className="card-content">
         <h5>{title}</h5>
-        <span>{description}</span>
+        <div className="card-description-content">
+          <div className="description-bar" />
+          <span>{description}</span>
+        </div>
       </div>
     </div>
   );

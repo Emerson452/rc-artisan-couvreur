@@ -26,8 +26,8 @@
 .card-content {
   display: flex;
   flex-direction: column;
-  padding: $padding-normal;
-  gap: 16px;
+  padding: $padding-large;
+  gap: $padding-normal;
 }
 
 .card-content h5 {
@@ -40,4 +40,17 @@
 .card-content span {
   font-size: $font-size-small;
   color: #545454;
+}
+
+.card-description-content {
+  padding-left: $padding-normal;
+  display: flex;
+  gap: $padding-normal;
+}
+
+.description-bar {
+  height: 100%;
+  width: 0.2rem;
+  background-color: $primary-color;
+  flex-shrink: 0;
 }
