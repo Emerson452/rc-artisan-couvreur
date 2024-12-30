@@ -6,9 +6,9 @@
   align-items: center;
   width: 100%;
   max-width: 300px;
-  border: $border-normal;
   background-color: #fff;
   margin: 0 auto;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.126);
 }
 
 .card-image {
@@ -25,19 +25,19 @@
 
 .card-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: $padding-small;
-  text-align: center;
+  flex-direction: column;
+  padding: $padding-normal;
+  gap: 16px;
 }
 
-.card-content span {
+.card-content h5 {
   font-size: $font-size-large;
+  margin: 0;
   font-weight: bold;
   color: #333;
 }
 
-.card-content img {
-  width: 32px;
-  height: 32px;
+.card-content span {
+  font-size: $font-size-small;
+  color: #545454;
 }
