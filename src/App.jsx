@@ -81,7 +81,12 @@ function App() {
   return (
     <>
       <Header></Header>
-      <img id="toiture" src={toiture} alt="toiture" />
+      <div className="toiture-container">
+        <img id="toiture" src={toiture} alt="toiture" />
+        <div className="toiture-overlay">
+          <h1>RC-ARTISAN-COUVREUR</h1>
+        </div>
+      </div>
       <div className="highlighted">
         <Highlights
           icon={memo}

@@ -1,5 +1,27 @@
 @use "../../variables.scss" as *;
 
+.toiture-container {
+  position: relative;
+}
+
+#toiture {
+  width: 100%;
+  height: auto;
+}
+
+.toiture-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+}
+
 .card {
   display: flex;
   flex-direction: column;
