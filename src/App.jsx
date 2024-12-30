@@ -19,10 +19,10 @@ const cards = [
   { background: charpente, title: "ZINGUERIE" },
   { background: charpente, title: "CHARPENTE" },
   { background: charpente, title: "ISOLATION" },
-  { background: charpente, title: "DÉMOUSSAGE" },
+  { background: charpente, title: "GOUTTIÈRE" },
   { background: charpente, title: "VELUX" },
   { background: charpente, title: "ÉTANCHÉITÉ" },
-  { background: charpente, title: "GOUTTIÈRE" },
+  { background: charpente, title: "DÉMOUSSAGE" },
 ];
 
 const handleScrollToFooter = () => {
