@@ -9,7 +9,7 @@ function Card({ background, altBackground, title, description }) {
         <img src={background} alt={altBackground} />
       </div>
       <div className="card-content">
-        <h5>{title}</h5>
+        <h3>{title}</h3>
         <div className="card-description-content">
           <div className="description-bar" />
           <span>{description}</span>
