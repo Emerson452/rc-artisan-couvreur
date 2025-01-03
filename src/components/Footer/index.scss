@@ -149,8 +149,9 @@ footer img {
   border-radius: $border-radius-normal;
   font-size: $font-size-input;
   font-family: $font-family-base;
-  height: 100%px;
-  line-height: normal;
+  height: 100%;
+  background-color: white;
+  color: $dark-color;
 }
 
 .form-group input {
@@ -160,4 +161,10 @@ footer img {
 
 .form-group select {
   padding: 12px;
+}
+
+.form-group select:focus {
+  border-color: none;
+  outline: none;
+  color: $dark-color;
 }
