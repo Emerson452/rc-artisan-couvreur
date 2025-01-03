@@ -4,38 +4,31 @@ import "./index.scss";
 import logo from "../../assets/logo/LogoCouleur.svg";
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setIsMenuOpen((prevState) => !prevState);
   };
 
-  const handleScrollToAccueil = () => {
-    const accueilSection = document.getElementById("toiture");
-    accueilSection.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleScrollToExpertise = () => {
-    const expertiseSection = document.getElementById("expertise");
-    if (expertiseSection) {
-      const offsetTop = expertiseSection.offsetTop;
-      const offset = 100;
+  const scrollToSection = (sectionId, offset = 0) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const sectionTop = section.offsetTop - offset;
       window.scrollTo({
-        top: offsetTop - offset,
+        top: sectionTop,
         behavior: "smooth",
       });
     }
   };
 
-  const handleScrollToFooter = () => {
-    const footerForm = document.getElementById("footer-form");
-    footerForm.scrollIntoView({ behavior: "smooth" });
-  };
+  const handleScrollToAccueil = () => scrollToSection("toiture");
+  const handleScrollToExpertise = () => scrollToSection("expertise", 100);
+  const handleScrollToFooter = () => scrollToSection("footer-form");
 
   return (
     <header>
       <img src={logo} alt="Logo rc artisan couvreur" />
-      <nav role="navigation" className={menuOpen ? "active" : ""}>
+      <nav role="navigation" className={isMenuOpen ? "active" : ""}>
         <Button.Secondary onClick={handleScrollToAccueil}>
           Accueil
         </Button.Secondary>
