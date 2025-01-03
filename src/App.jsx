@@ -27,48 +27,56 @@ const cards = [
     title: "COUVERTURE",
     description:
       "Installation et entretien de toitures pour assurer une protection optimale contre les intempéries.",
+    alt: "Couverture de toit en installation",
   },
   {
     background: zinguerie,
     title: "ZINGUERIE",
     description:
       "Pose et réparation des éléments métalliques de toiture pour une parfaite étanchéité et durabilité.",
+    alt: "Travaux de zinguerie sur toiture",
   },
   {
     background: charpente,
     title: "CHARPENTE",
     description:
       "Conception, installation et réparation des structures en bois pour un support robuste et durable.",
+    alt: "Structure de charpente en bois",
   },
   {
     background: isolation,
     title: "ISOLATION",
     description:
       "Amélioration de l'efficacité énergétique avec des matériaux isolants de haute qualité.",
+    alt: "Isolation de toiture pour efficacité énergétique",
   },
   {
     background: gouttière,
     title: "GOUTTIÈRE",
     description:
       "Installation et nettoyage des gouttières pour un drainage efficace des eaux pluviales.",
+    alt: "Installation de gouttières pour drainage des eaux",
   },
   {
     background: velux,
     title: "VELUX",
     description:
       "Pose de fenêtres de toit pour apporter lumière naturelle et ventilation à votre intérieur.",
+    alt: "Installation de fenêtres de toit Velux",
   },
   {
     background: étanchéité,
     title: "ÉTANCHÉITÉ",
     description:
       "Traitements spécifiques pour prévenir les infiltrations et protéger votre toiture.",
+    alt: "Travaux d'étanchéité sur toiture",
   },
   {
     background: démoussage,
     title: "DÉMOUSSAGE",
     description:
       "Nettoyage de la toiture pour éliminer mousses, lichens et saletés, prolongeant ainsi sa durée de vie.",
+    alt: "Démoussage de toiture pour prolonger sa durée de vie",
   },
 ];
 
@@ -82,7 +90,11 @@ function App() {
     <>
       <Header></Header>
       <div className="toiture-container">
-        <img id="toiture" src={toiture} alt="toiture" />
+        <img
+          id="toiture"
+          src={toiture}
+          alt="Toiture RC Artisan Couvreur à Pontault-Combault"
+        />
         <div className="toiture-overlay">
           <h1>RC-ARTISAN-COUVREUR</h1>
         </div>
@@ -115,7 +127,7 @@ function App() {
             <Card
               key={index}
               background={card.background}
-              altBackground="prestation de charpente"
+              altBackground={card.alt}
               title={card.title}
               description={card.description}
             />
