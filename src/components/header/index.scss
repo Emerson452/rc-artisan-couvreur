@@ -30,19 +30,32 @@ header img {
     padding: $padding-small;
   }
   nav {
-    display: none;
-    flex-direction: column;
+    display: flex;
+    gap: $gap-normal;
+    opacity: 0;
+    pointer-events: none;
     width: 100%;
+    padding: 10px;
     position: absolute;
     top: 60px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     left: 0;
-    padding: 10px;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
   nav.active {
+    pointer-events: auto;
     display: flex;
+    gap: $gap-normal;
+    opacity: 1;
+  }
+
+  nav button {
+    width: 100%;
+    justify-content: center;
   }
 
   .hamburger {
@@ -52,8 +65,4 @@ header img {
   .hamburger:focus {
     outline: none;
   }
-}
-
-nav {
-  transition: all 0.3s ease-in-out;
 }

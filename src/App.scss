@@ -6,6 +6,7 @@
   max-height: 900px;
   display: block;
   clip-path: ellipse(95% 90% at 50% 0%);
+  filter: brightness(0.8);
 }
 
 .highlighted {
@@ -76,6 +77,10 @@
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 100%;
+  }
+
   .highlighted {
     flex-direction: column;
     gap: 32px;
@@ -96,5 +101,11 @@
 
   .container-product {
     width: 100%;
+  }
+}
+
+@media (max-width: 512px) {
+  h1 {
+    padding-top: 8%;
   }
 }
