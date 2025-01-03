@@ -76,12 +76,14 @@ function Footer() {
             <div className="form-group">
               <select id="works" name="works" required>
                 <option value="">Choisissez un type de travaux</option>
-                <option value="toitures">Toitures</option>
                 <option value="couverture">Couverture</option>
-                <option value="démoussage">Démoussage</option>
-                <option value="isolation">Isolation</option>
                 <option value="zinguerie">Zinguerie</option>
-                <option value="velux">Installation de Velux</option>
+                <option value="charpente">Charpente</option>
+                <option value="isolation">Isolation</option>
+                <option value="gouttière">Gouttière</option>
+                <option value="velux">Velux</option>
+                <option value="étanchéité">Étanchéité</option>
+                <option value="démoussage">Démoussage</option>
                 <option value="autre">Autre</option>
               </select>
             </div>
