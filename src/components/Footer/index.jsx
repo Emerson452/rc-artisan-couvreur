@@ -30,7 +30,17 @@ function Footer() {
         <div className="footer-info">
           <img src={logo} alt="Logo rc artisan couvreur" />
           <h2>Parlons ensemble de votre prochain projet</h2>
-          <p>Téléphone : 07 61 66 79 05</p>
+          <p>
+            Tél :
+            <a href="tel:+33761667905" className="footer-phone-link">
+              07 61 66 79 05
+            </a>
+            <span id="between-phone">/</span>
+            <a href="tel:+33164884239" className="footer-phone-link">
+              01 64 88 42 39
+            </a>
+          </p>
+
           <p>
             Adresse : 2 rue du Pré des Aulnes, 77340 Pontault-Combault, France
           </p>
