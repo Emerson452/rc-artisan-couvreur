@@ -1,4 +1,5 @@
 import "./App.scss";
+import garantie from "./assets/images/garantie-décennale-rc-artisan.png";
 import toiture from "./assets/images/toiture-rc-artisan.jpeg";
 import couverture from "./assets/images/couverture-rc-artisan.jpg";
 import charpente from "./assets/images/charpente-rc-artisan.jpg";
@@ -100,6 +101,14 @@ function App() {
             <h1>RC-ARTISAN-COUVREUR</h1>
           </div>
         </div>
+        <div class="logo-container">
+          <img
+            id="garantie"
+            src={garantie}
+            alt="Garantie décennale RC Artisan Couvreur à Pontault-Combault"
+          />
+        </div>
+
         <section className="highlighted">
           <Highlights
             icon={memo}

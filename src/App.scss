@@ -9,6 +9,17 @@
   filter: brightness(0.8);
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+#garantie {
+  width: 10%;
+  height: auto;
+  position: absolute;
+}
+
 .highlighted {
   display: flex;
   justify-content: space-evenly;
@@ -74,6 +85,10 @@
   .steps-list {
     flex-direction: column;
   }
+
+  #garantie {
+    width: 12%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -84,8 +99,9 @@
   .highlighted {
     flex-direction: column;
     gap: 32px;
-    margin: 10% auto;
+    margin: 35% auto 15% auto;
   }
+
   #expertise {
     grid-template-columns: 1fr;
     margin: $margin-normal;
@@ -101,6 +117,10 @@
 
   .container-product {
     width: 100%;
+  }
+
+  #garantie {
+    width: 30%;
   }
 }
 
