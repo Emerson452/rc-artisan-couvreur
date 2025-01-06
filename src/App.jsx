@@ -5,9 +5,9 @@ import charpente from "./assets/images/charpente-rc-artisan.jpg";
 import zinguerie from "./assets/images/zinguerie-rc-artisan.jpg";
 import isolation from "./assets/images/isolation-rc-artisan.jpg";
 import gouttière from "./assets/images/gouttière-rc-artisan.jpg";
-import velux from "./assets/images/velux-rc-artisan.jpg";
+import velux from "./assets/images/velux-rc-artisan.png";
 import étanchéité from "./assets/images/étanchéité-rc-artisan.jpg";
-import démoussage from "./assets/images/démoussage-rc-artisan.jpg";
+import démoussage from "./assets/images/démoussage-rc-artisan.png";
 
 import memo from "./assets/icon/memo.svg";
 import tools from "./assets/icon/tools.svg";
