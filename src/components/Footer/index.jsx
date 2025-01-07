@@ -29,7 +29,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-info">
           <img src={logo} alt="Logo rc artisan couvreur" />
-          <h2>Parlons ensemble de votre prochain projet</h2>
+          <h3>Parlons ensemble de votre prochain projet</h3>
           <p>
             Tél :
             <a href="tel:+33761667905" className="footer-phone-link">

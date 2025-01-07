@@ -99,6 +99,7 @@ function App() {
           />
           <div className="toiture-overlay">
             <h1>RC-ARTISAN-COUVREUR</h1>
+            <h2>Couverture tuile ardoide et zinguerie</h2>
           </div>
         </div>
         <div class="logo-container">
