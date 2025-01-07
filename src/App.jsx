@@ -34,7 +34,7 @@ const cards = [
     background: zinguerie,
     title: "ZINGUERIE",
     description:
-      "Pose et réparation des éléments métalliques de toiture pour une parfaite étanchéité et durabilité.",
+      "Pose et réparation de zinc et plomb pour une parfaite étanchéité et durabilité.",
     alt: "Travaux de zinguerie sur toiture",
   },
   {
@@ -55,14 +55,14 @@ const cards = [
     background: gouttière,
     title: "GOUTTIÈRE",
     description:
-      "Installation et nettoyage des gouttières pour un drainage efficace des eaux pluviales.",
+      "Installation et nettoyage des gouttières en zinc, PVC et aluminium pour un drainage efficace des eaux pluviales.",
     alt: "Installation de gouttières pour drainage des eaux",
   },
   {
     background: velux,
     title: "VELUX",
     description:
-      "Pose de fenêtres de toit pour apporter lumière naturelle et ventilation à votre intérieur.",
+      "Pose de fenêtres de toit pour apporter une lumière naturelle et ventilation à votre intérieur.",
     alt: "Installation de fenêtres de toit Velux",
   },
   {
