@@ -1,11 +1,11 @@
 import "./App.scss";
 import garantie from "./assets/images/garantie-décennale-rc-artisan.png";
-import toiture from "./assets/images/toiture-rc-artisan.jpeg";
+import toiture from "./assets/images/toiture-rc-artisan.webp";
 import couverture from "./assets/images/couverture-rc-artisan.jpg";
-import charpente from "./assets/images/charpente-rc-artisan.jpg";
+import charpente from "./assets/images/charpente-rc-artisan.png";
 import zinguerie from "./assets/images/zinguerie-rc-artisan.jpg";
 import isolation from "./assets/images/isolation-rc-artisan.jpg";
-import gouttière from "./assets/images/gouttière-rc-artisan.jpg";
+import gouttière from "./assets/images/gouttière-rc-artisan.png";
 import velux from "./assets/images/velux-rc-artisan.png";
 import étanchéité from "./assets/images/étanchéité-rc-artisan.jpg";
 import démoussage from "./assets/images/démoussage-rc-artisan.png";
