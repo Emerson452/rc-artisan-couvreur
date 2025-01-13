@@ -1,14 +1,14 @@
 import "./App.scss";
-import garantie from "./assets/images/garantie-décennale-rc-artisan.png";
+import garantie from "./assets/images/garantie-décennale-rc-artisan.webp";
 import toiture from "./assets/images/toiture-rc-artisan.webp";
-import couverture from "./assets/images/couverture-rc-artisan.jpg";
-import charpente from "./assets/images/charpente-rc-artisan.png";
-import zinguerie from "./assets/images/zinguerie-rc-artisan.jpg";
-import isolation from "./assets/images/isolation-rc-artisan.jpg";
-import gouttière from "./assets/images/gouttière-rc-artisan.png";
-import velux from "./assets/images/velux-rc-artisan.png";
-import étanchéité from "./assets/images/étanchéité-rc-artisan.jpg";
-import démoussage from "./assets/images/démoussage-rc-artisan.png";
+import couverture from "./assets/images/couverture-rc-artisan.webp";
+import charpente from "./assets/images/charpente-rc-artisan.webp";
+import zinguerie from "./assets/images/zinguerie-rc-artisan.webp";
+import isolation from "./assets/images/isolation-rc-artisan.webp";
+import gouttière from "./assets/images/gouttière-rc-artisan.webp";
+import velux from "./assets/images/velux-rc-artisan.webp";
+import étanchéité from "./assets/images/étanchéité-rc-artisan.webp";
+import démoussage from "./assets/images/démoussage-rc-artisan.webp";
 
 import memo from "./assets/icon/memo.svg";
 import tools from "./assets/icon/tools.svg";
