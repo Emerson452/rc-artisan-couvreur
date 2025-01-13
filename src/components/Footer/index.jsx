@@ -84,6 +84,9 @@ function Footer() {
             </div>
 
             <div className="form-group">
+              <label htmlFor="works" className="sr-only">
+                Type de travaux
+              </label>
               <select id="works" name="works" required>
                 <option value="">Choisissez un type de travaux</option>
                 <option value="couverture">Couverture</option>
