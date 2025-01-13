@@ -96,6 +96,7 @@ function App() {
             id="toiture"
             src={toiture}
             alt="Toiture RC Artisan Couvreur à Pontault-Combault"
+            loading="lazy"
           />
           <div className="toiture-overlay">
             <h1>RC-ARTISAN-COUVREUR</h1>
@@ -107,6 +108,7 @@ function App() {
             id="garantie"
             src={garantie}
             alt="Garantie décennale RC Artisan Couvreur à Pontault-Combault"
+            loading="lazy"
           />
         </div>
 

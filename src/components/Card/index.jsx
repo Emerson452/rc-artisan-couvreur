@@ -6,7 +6,7 @@ function Card({ background, altBackground, title, description }) {
   return (
     <div className="card">
       <div className="card-image">
-        <img src={background} alt={altBackground} />
+        <img src={background} alt={altBackground} loading="lazy" />
       </div>
       <div className="card-content">
         <h3>{title}</h3>
