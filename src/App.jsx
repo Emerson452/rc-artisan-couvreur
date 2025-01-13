@@ -103,7 +103,7 @@ function App() {
             <h2>Couverture, tuile, ardoise et zinguerie.</h2>
           </div>
         </div>
-        <div class="logo-container">
+        <div className="logo-container">
           <img
             id="garantie"
             src={garantie}
