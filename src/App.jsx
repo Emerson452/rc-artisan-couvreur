@@ -1,14 +1,14 @@
 import "./App.scss";
-import garantie from "./assets/images/garantie-décennale-rc-artisan.webp";
+import garantie from "./assets/images/garantie-decennale-rc-artisan.webp";
 import toiture from "./assets/images/toiture-rc-artisan.webp";
 import couverture from "./assets/images/couverture-rc-artisan.webp";
 import charpente from "./assets/images/charpente-rc-artisan.webp";
 import zinguerie from "./assets/images/zinguerie-rc-artisan.webp";
 import isolation from "./assets/images/isolation-rc-artisan.webp";
-import gouttière from "./assets/images/gouttière-rc-artisan.webp";
+import gouttiere from "./assets/images/gouttiere-rc-artisan.webp";
 import velux from "./assets/images/velux-rc-artisan.webp";
-import étanchéité from "./assets/images/étanchéité-rc-artisan.webp";
-import démoussage from "./assets/images/démoussage-rc-artisan.webp";
+import etancheite from "./assets/images/etancheite-rc-artisan.webp";
+import demoussage from "./assets/images/demoussage-rc-artisan.webp";
 
 import memo from "./assets/icon/memo.svg";
 import tools from "./assets/icon/tools.svg";
@@ -52,7 +52,7 @@ const cards = [
     alt: "Isolation de toiture pour efficacité énergétique",
   },
   {
-    background: gouttière,
+    background: gouttiere,
     title: "GOUTTIÈRE",
     description:
       "Installation et nettoyage des gouttières en zinc, PVC et aluminium pour un drainage efficace des eaux pluviales.",
@@ -66,14 +66,14 @@ const cards = [
     alt: "Installation de fenêtres de toit Velux",
   },
   {
-    background: étanchéité,
+    background: etancheite,
     title: "ÉTANCHÉITÉ",
     description:
       "Traitements spécifiques pour prévenir les infiltrations et protéger votre toiture.",
     alt: "Travaux d'étanchéité sur toiture",
   },
   {
-    background: démoussage,
+    background: demoussage,
     title: "DÉMOUSSAGE",
     description:
       "Nettoyage de la toiture pour éliminer mousses, lichens et saletés, prolongeant ainsi sa durée de vie.",
